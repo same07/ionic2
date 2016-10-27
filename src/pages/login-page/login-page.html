@@ -1,0 +1,37 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content padding class="auth-outer">
+
+	<div class="login-view auth-view" style="padding-top:25%">
+		<div class="row">
+			<div class="col col-center">
+				<div class="card login-container">
+					<ion-list>
+						<ion-list-header>
+   	 						Login With Your Account
+  						</ion-list-header>
+					  	<ion-item>
+						    <ion-label floating>Username</ion-label>
+						    <ion-input [(ngModel)]="data.username" type="text" required></ion-input>
+						  </ion-item>
+						 
+						  <ion-item>
+						    <ion-label floating>Password</ion-label>
+						    <ion-input [(ngModel)]="data.password" type="password"></ion-input>
+						 </ion-item>
+
+					</ion-list>
+
+				</div>
+				<button ion-button full (click)="login(data)">Login</button>
+			</div>
+		</div>
+		
+	</div>
+</ion-content>
